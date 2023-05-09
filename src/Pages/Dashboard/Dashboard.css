@@ -1,0 +1,146 @@
+.main-container {
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  height: 100%;
+  width: 100%;
+  background-color: rgb(255, 255, 255);
+}
+.container {
+  margin-top: 5rem;
+  margin-left: 12rem;
+  margin-right: 12rem;
+  height: 100%;
+  width: 100%;
+}
+.header {
+  margin-bottom: 5rem;
+}
+.seg1-sub1 {
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+  justify-items: flex-start;
+  gap: 1rem;
+}
+.image,
+.border-image {
+  padding: 0.25rem;
+  border: 1px solid;
+  border-color: rgba(94, 148, 0);
+}
+.border-image {
+  border-color: rgb(49, 76, 3);
+}
+.img1 {
+  width: 4.25rem;
+}
+.seg1 {
+  display: flex;
+  justify-content: center;
+  gap: 8rem;
+  margin-bottom: 5rem;
+}
+.seg2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1rem;
+  background-color: #f7f7f7;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  margin-bottom: 10rem;
+}
+.buy {
+  display: flex;
+  justify-content: baseline;
+  gap: 1.625rem;
+}
+.seg1-sub3 {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.seg2-sub1 {
+  display: flex;
+  justify-content: space-between;
+}
+.seg2-sub2 {
+  display: flex;
+  justify-content: space-around;
+  gap: 1rem;
+  overflow-x: hidden;
+  position: relative;
+  padding-bottom: 15rem;
+}
+.t1 {
+  font-size: 16px;
+  color: #909090;
+}
+.t2 {
+  font-size: 20px;
+  color: #202020;
+  font-weight: 700;
+}
+.t3 {
+  font-size: 14px;
+  color: #909090;
+}
+.t4 {
+  font-size: 18px;
+  color: #202020;
+  font-weight: 600;
+}
+.t5 {
+  font-size: 14px;
+  color: #476f00;
+}
+.t6 {
+  font-size: 14px;
+  color: #606060;
+}
+.t7 {
+  font-size: 14px;
+  color: #909090;
+}
+.t8 {
+  font-size: 16px;
+  color: #000000;
+  font-weight: 700;
+}
+.t9 {
+  font-size: 14px;
+  color: #606060;
+  font-weight: 400;
+}
+.arrows {
+  display: flex;
+  justify-content: baseline;
+  gap: 1rem;
+}
+.arrow,
+.active {
+  display: flex;
+  justify-content: center;
+  width: 1.5rem;
+  height: 1.5rem;
+  background-color: #eeeeee;
+  padding: 0.5rem;
+  border-radius: 0.25rem;
+  color: #606060;
+}
+.active {
+  background-color: #ffffff;
+}
+.heading {
+  font-size: 24px;
+  color: #202020;
+  font-weight: 700;
+  padding: 0.5rem;
+}
+.card-modal {
+  width: 20rem;
+  height: 14.5rem;
+  border: 5px solid;
+  border-color: #606060;
+}

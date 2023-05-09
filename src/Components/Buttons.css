@@ -1,0 +1,93 @@
+.redBtn {
+  width: 20.5rem;
+  height: 3.5rem;
+  background-color: #cc0000;
+  color: white;
+  padding: 1rem;
+  font-size: 1rem;
+  border-radius: 0.25rem;
+}
+.redBtnInc {
+  width: 20.5rem;
+  height: 3.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0;
+  border: 0.25rem solid #cc0000;
+  background-color: white;
+}
+.plus,
+.minus {
+  width: 6.8rem;
+  height: 3.5rem;
+  background-color: #cc0000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 16px;
+  font-weight: 600;
+}
+.count {
+  color: #cc0000;
+  font-size: 16px;
+  font-weight: 600;
+}
+.saveBtn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 12.25rem;
+  height: 3.5rem;
+  background-color: white;
+  color: black;
+  padding: 1rem;
+  font-size: 1rem;
+  border-radius: 0.25rem;
+  border: 0.05rem solid #909090;
+  font-weight: 600;
+  gap: 0.25rem;
+}
+.icon {
+  height: 1.5rem;
+  width: 1.5rem;
+}
+.dropBtn {
+  width: 18.75rem;
+  height: 1.625rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.25rem;
+  border: 1px solid;
+  border-color: #909090;
+  border-radius: 0.25rem;
+  background-color: white;
+}
+.text {
+  font-size: 16px;
+  color: #606060;
+}
+.save {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  height: 2rem;
+  width: 1.75rem;
+  border: 0.01rem solid #909090;
+}
+.add,
+.added {
+  width: 16.2rem;
+  height: 2rem;
+  border: 0.1rem solid #cc0000;
+  color: #cc0000;
+  background-color: white;
+}
+.added {
+  border: 0.1rem solid white;
+  color: white;
+  background-color: #cc0000;
+}

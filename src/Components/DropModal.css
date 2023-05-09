@@ -1,0 +1,21 @@
+/* .box {
+  position: relative;
+} */
+.modal {
+  width: 20rem;
+  height: auto;
+  padding: 1rem 1rem 1rem 1rem;
+  background-color: white;
+}
+.box {
+  /* padding: 3rem; */
+  background-color: white;
+  /* position: absolute; */
+  display: flex;
+  justify-content: center;
+  border: 0.05rem solid #606060;
+}
+.drop-container {
+  position: absolute;
+  top: 30vh;
+}

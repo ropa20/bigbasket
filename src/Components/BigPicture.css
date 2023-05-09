@@ -1,0 +1,27 @@
+.big-img {
+  border: 1px solid;
+  border-color: rgba(94, 148, 0);
+  padding: 0.25rem;
+}
+.bigImg {
+  width: 25.5rem;
+  height: 25.5rem;
+}
+.image-container {
+  position: relative;
+}
+
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+.magnifier {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border: 1px solid black;
+  opacity: 0;
+  pointer-events: none;
+}
