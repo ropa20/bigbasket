@@ -6,13 +6,13 @@ import Header from "../../Components/Header";
 import Pack from "../../Components/Pack";
 import Card from "../../Components/Card";
 import {
+  ArrowBtn,
   RedButton,
   RedButtonIncrement,
   SaveButton,
 } from "../../Components/Buttons";
 import BigPicture from "../../Components/BigPicture";
 import imageList from "../../Assests/Dummy";
-import DropModal from "../../Components/DropModal";
 
 const Dashboard = () => {
   const [response, setResponse] = useState([]);
@@ -26,7 +26,8 @@ const Dashboard = () => {
   const [next, setNext] = useState(0);
   const [show, setShow] = useState(false);
   const [added, setAdded] = useState([]);
-  const [active, setActive] = useState(1);
+  const [activePrev, setActivePrev] = useState(true);
+  const [activeNext, setActiveNext] = useState(false);
 
   const APP_ID = "cae8a2bb";
   const APP_KEY = "c85221f1352260a5ef5c360083b3e3fc";
@@ -65,30 +66,33 @@ const Dashboard = () => {
   };
   const handleNext = () => {
     if (next + 4 >= response?.length - 1) {
-      setActive(0);
+      setActivePrev(false);
+      setActiveNext(true);
     } else {
       let temp = next + 4;
       setNext(temp);
-      setActive(2);
+      setActivePrev(false);
+      setActiveNext(false);
     }
   };
   const handlePrev = () => {
     if (next - 4 < 0) {
-      setActive(1);
+      setActiveNext(false);
+      setActivePrev(true);
     } else {
       let temp = next - 4;
       setNext(temp);
-      setActive(2);
+      setActiveNext(false);
+      setActivePrev(false);
     }
-  };
-  const handleClose = () => {
-    setShow(false);
   };
   const handleOpen = (id) => {
     setShow(!show);
     setIsSelectedModal(id);
   };
-  console.log(response?.slice(next, next + 4));
+  const handleClose = () => {
+    setShow(false);
+  };
   return (
     <div className="main-container">
       <div className="container">
@@ -152,22 +156,16 @@ const Dashboard = () => {
             <div className="seg2-sub1">
               <div className="heading">Frequently Bought Together</div>
               <div className="arrows">
-                <div
-                  className={
-                    active === 0 ? "active" : active === 1 ? "arrow" : "active"
-                  }
+                <ArrowBtn
+                  symbol={"prev"}
+                  active={activePrev}
                   onClick={handlePrev}
-                >
-                  &lt;
-                </div>
-                <div
-                  className={
-                    active === 1 ? "active" : active === 0 ? "arrow" : "active"
-                  }
+                />
+                <ArrowBtn
+                  symbol={"next"}
+                  active={activeNext}
                   onClick={handleNext}
-                >
-                  &gt;
-                </div>
+                />
               </div>
             </div>
             <div className="seg2-sub2">
@@ -184,9 +182,7 @@ const Dashboard = () => {
                       added={added}
                       onClickRemove={handleRemove}
                       setShow={setShow}
-                      close={() => {
-                        setShow(false);
-                      }}
+                      close={handleClose}
                     />
                   </>
                 );
