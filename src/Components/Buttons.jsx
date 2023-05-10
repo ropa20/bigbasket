@@ -69,3 +69,11 @@ export const Added = ({ onClickRemove, index }) => {
     </button>
   );
 };
+export const ArrowBtn = ({ symbol, onClick, active }) => {
+  return (
+    <button className="arrow" disabled={active} onClick={onClick}>
+      {symbol === "prev" && <>&lt;</>}
+      {symbol === "next" && <>&gt;</>}
+    </button>
+  );
+};
