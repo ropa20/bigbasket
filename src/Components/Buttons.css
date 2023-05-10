@@ -91,3 +91,15 @@
   color: white;
   background-color: #cc0000;
 }
+.arrow {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 2.5rem;
+  height: 2.5rem;
+  background-color: #ffffff;
+  padding: 0.5rem;
+  border-radius: 0.25rem;
+  color: #606060;
+  font-size: 18px;
+}
